@@ -17,8 +17,8 @@
       <artifactId>apache-etch-java</artifactId>
       <version>1.4.0</version>  
       <scope>system</scope>
-      <!--systemPath>/Users/apple/Documents/develop/apache-etch-1.4.0/binding-java/lib/apache-etch-java-runtime-1.4.0.jar</systemPath-->
-      <systemPath>/root/hw/RPC_Benchmark/rpc_libraries/apache-etch-java-runtime-1.4.0.jar</systemPath>
+      <systemPath>/Users/apple/Documents/develop/apache-etch-1.4.0/binding-java/lib/apache-etch-java-runtime-1.4.0.jar</systemPath>
+      <!--systemPath>/root/hw/RPC_Benchmark/rpc_libraries/apache-etch-java-runtime-1.4.0.jar</systemPath-->
     </dependency>
     <dependency>
       <groupId>com.yahoo.ycsb</groupId>

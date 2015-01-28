@@ -1,4 +1,4 @@
-package com.yahoo.ycsb.rpc;
+package rpcbench;
 
 import org.apache.thrift.async.AsyncMethodCallback;
 
@@ -7,7 +7,6 @@ public class MethodCallback implements AsyncMethodCallback<Object> {
 	boolean done = false;
 
 	public synchronized Object getResult() {
-		// 返回结果值
 		if (!done) {
 			try {
 				wait();
@@ -18,7 +17,6 @@ public class MethodCallback implements AsyncMethodCallback<Object> {
 		return this.response;
 	}
 
-	// 处理服务返回的结果值
 	@Override
 	public synchronized void onComplete(Object response) {
 		this.response = response;
@@ -26,10 +24,8 @@ public class MethodCallback implements AsyncMethodCallback<Object> {
 		notify();
 	}
 
-	// 处理调用服务过程中出现的异常
 	@Override
 	public synchronized void onError(Exception arg0) {
-		// TODO Auto-generated method stub
 
 	}
 
